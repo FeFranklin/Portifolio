@@ -1,22 +1,45 @@
 {
   "name": "portifolio",
-  "version": "1.0.0",
+  "private": true,
   "description": "my personal portifolio",
-  "main": "index.js",
+  "version": "0.1.0",
+  "author": "Felipe Franklin <felipelfbezerra54@gmail.com>",
+  "dependencies": {
+    "gatsby": "^4.1.0",
+    "gatsby-plugin-gatsby-cloud": "^4.1.0",
+    "gatsby-plugin-image": "^2.1.0",
+    "gatsby-plugin-manifest": "^4.1.0",
+    "gatsby-plugin-offline": "^5.1.0",
+    "gatsby-plugin-react-helmet": "^5.1.0",
+    "gatsby-plugin-sharp": "^4.1.0",
+    "gatsby-source-filesystem": "^4.1.0",
+    "gatsby-transformer-sharp": "^4.1.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.4.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "ISC",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FeFranklin/Portifolio.git"
   },
-  "author": "Felipe Franklin",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/FeFranklin/Portifolio/issues"
-  },
-  "homepage": "https://github.com/FeFranklin/Portifolio#readme",
-  "devDependencies": {
-    "gh-pages": "^3.2.3"
   }
 }
