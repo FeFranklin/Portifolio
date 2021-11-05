@@ -1,0 +1,22 @@
+{
+  "name": "portifolio",
+  "version": "1.0.0",
+  "description": "my personal portifolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FeFranklin/Portifolio.git"
+  },
+  "author": "Felipe Franklin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FeFranklin/Portifolio/issues"
+  },
+  "homepage": "https://github.com/FeFranklin/Portifolio#readme",
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
