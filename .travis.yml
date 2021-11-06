@@ -4,8 +4,11 @@ before_script:
 node_js:
   - "17.0.1"
 deploy:
-  provider: script
+  provider: pages
+  local_dir: public
   script: yarn install && yarn run deploy
+  github-token: $GITHUB_TOKEN
   skip_cleanup: true
+  target_branch: gh-pages
   on:
     branch: main
