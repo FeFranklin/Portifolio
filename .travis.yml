@@ -7,7 +7,7 @@ deploy:
   provider: pages
   local_dir: public
   script: yarn install && yarn run deploy
-  github-token: $GITHUB_TOKEN
+  github-token: $GH_TOKEN
   skip_cleanup: true
   target_branch: gh-pages
   on:
