@@ -40,7 +40,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "deploy": "gh-pages -d public -r https://$GH_TOKEN@github.com/fefranklin/fefranklin.github.io"
+    "deploy": "gh-pages -r https://$GH_TOKEN@github.com/fefranklin/fefranklin.github.io"
   },
   "repository": {
     "type": "git",
