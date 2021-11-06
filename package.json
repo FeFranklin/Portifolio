@@ -33,14 +33,14 @@
   ],
   "license": "ISC",
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "deploy": "gh-pages -r https://$GH_TOKEN@github.com/fefranklin/fefranklin.github.io"
+    "deploy": "gh-pages -d docs -r https://$GH_TOKEN@github.com/fefranklin/fefranklin.github.io"
   },
   "repository": {
     "type": "git",
