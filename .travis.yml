@@ -9,7 +9,6 @@ node_js:
   - "17.0.1"
 deploy:
   provider: pages
-  local_dir: public
   script: yarn install && yarn run deploy
   github-token: $GH_TOKEN
   skip_cleanup: true
