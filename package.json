@@ -40,8 +40,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "preDeploy": "gatsby build --prefix-paths",
-    "deploy": "npm run preDeploy && gh-pages -d public -r https://$GH_TOKEN@github.com/fefranklin/fefranklin.github.io"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -r https://$GH_TOKEN@github.com/fefranklin/fefranklin.github.io"
   },
   "repository": {
     "type": "git",
