@@ -1,5 +1,5 @@
 {
-"compilerOptions": {
+  "compilerOptions": {
     "module": "commonjs",
     "target": "es6",
     "jsx": "preserve",
@@ -12,6 +12,6 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "removeComments": false
-},
-"include": ["./src/**/*"]
+  },
+  "include": ["./src/**/*"]
 }

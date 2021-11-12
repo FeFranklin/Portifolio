@@ -2,38 +2,60 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
+import "./header.scss"
+
 interface HeaderProps {
   siteTitle: string
 }
 
-const Header = ({ siteTitle }: HeaderProps) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+interface HeaderLinks {
+  label : string;
+  href: string;
+}
 
+const headersData: HeaderLinks[] = [
+  {
+    label: "About Me",
+    href: "#about",
+  },
+  {
+    label: "Projects",
+    href: "#projects",
+  },
+  {
+    label: "Misc",
+    href: "#misc",
+  }
+];
+
+const Header = ({ siteTitle }: HeaderProps) => {
+
+  const getMenu = () => {
+    return headersData.map(({label, href}) => {
+      return (
+        <h2 className="header__menu__items">
+          <Link to={`${href}`} className="header__menu__items--link">
+            {label}
+          </Link>
+        </h2>
+      )
+    })
+  }
+  
+  return (
+    <header>
+      <div className="header">
+        <h1 className="header__title">
+          <Link to="/" className="header__link">
+            {siteTitle}
+          </Link>
+        </h1>
+        <div className="header__menu">
+          {getMenu()}
+        </div>
+      </div>
+    </header>
+  );
+}
 
 export default Header
